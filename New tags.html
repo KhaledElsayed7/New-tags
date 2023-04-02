@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+         <meta charset="UTF-8"/>
+         <title> New Tags => progress, meter, </title>
+         <link rel="stylesheet" href="newTagsStyle.css"/>
+        </head>
+        <body>
+            
+            <section>
+             Cpu : <progress min="0" max="1" value="0.7"></progress>
+            </section>
+            <section>
+            <article> This Article About &lt meter &gt <article>
+            
+            <meter min     = "0"
+                   max     = "1"
+                   value   = "0.7"
+                   low     = "0.4"
+                   heigh   = "0.8"
+                   optimum = "1"></meter>
+            </section>
+            <section>
+                <details open>
+                    <summary>Details</summary>
+                    <ul>
+                        <a href="http://www.google.com"><li>Link 1</li></a>
+                        <a href="http://www.google.com"><li>Link 2</li></a>
+                        <a href="http://www.google.com"><li>Link 3</li></a>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <p>I love <mark>Html5</mark> too much</p>
+            </section>
+            <section>
+                <a>http://www.longLink.com<wbr>&cat=100&List=List of Books</wbr></a>
+            </section>
+            <section>
+                <h4>This Is About &lt;Bdi&gt;</h4>
+                <div> Ahmed: 100</div>
+                <div> Sami: 90</div>
+                <div> Mona: 80</div>
+                <div> <bdi>علي</bdi> :95</div>  
+            </section>
+            <section>
+                <h4>This Is About &lt;time&gt;</h4>
+              <time datetime="2020-10-25">Oct 25th 2020</time>  
+            </section>
+            <section>
+               <form>
+                    <input list="Browsers">
+                    <datalist id="Browsers">
+                        <option value="Chrome"></option>
+                        <option value="EI"></option>
+                        <option value="Fire Fox"></option>
+                        <option value="Opera"></option>
+                        <option value="safari"></option>
+                    </datalist>
+                    <input type="submit" value="choose">
+               </form> 
+            </section>
+            <section>
+                <h4>This Is About &lt;Output&gt;</h4>
+                <h5> Calculate your age in dayes</h5>
+                <form oninput="result.value = parseInt(age.value) * parseInt(days.value)">
+                    <input type="text" name="age">
+                    <input type="hidden" name="days" value="365">
+                    <output name="result"></output>
+                </form>
+            </section>
+            <section class="one">
+                <form >
+                    <label>Color</label>                                   <br>
+                    <input type="color" name="themes" value="red">         <br>
+                    <label>Range</label>                                   <br>
+                    <input type="range" min="0" max="10" step="2">         <br>
+                    <label>Number</label>                                  <br>
+                    <input type="number" min="0" max="20" step="5">        <br>
+                    <label>Email</label>                                   <br>
+                    <input type="email" name="email">                      <br>
+                    <label>Search</label>                                  <br>
+                    <input type="search" name="search">                    <br>
+                    <label>Url</label>                                     <br>
+                    <input type="url" name="Link">                         <br>
+                    <label>Telephone</label>                               <br>
+                    <input type="tel" name="Telephone">                    <br>
+                    <label>Time</label>                                    <br>
+                    <input type="time" name="time">                        <br>
+                    <label>Datetime</label>                                <br>
+                    <input type="datetime-local" name="datetime">          <br>
+                    <label>Date</label>                                    <br>
+                    <input type="date" name="date">                        <br>
+                    <label>Week</label>                                    <br>
+                    <input type="week" name="week">                        <br>
+                    <label>Month</label>                                   <br>
+                    <input type="month" name="month">                      <br>
+                   
+                    
+                </form>
+            </section>
+            <section class="form">
+                <form id="main-form" validation action="process.php" method="post" enctype="multiple/form-data" >
+                    <label>Name</label>                                                                          <br>
+                   <input type="text" name="Name" required placeholder="name" autocomplete="on" autofocus="on">  <br>
+                   <label>Email</label>                                                                          <br>
+                   <input type="email" name="email">                                                             <br>                                         
+                   <input type="submit" value="submit">                                                          <br>
+                   <input type="submit" value="othersubmit" formaction="other.php" formmethod="get">             <br>
+                   <input type="submit" value="submit without validation" formnovalidation formtarget="_blank">  <br>
+                   
+                </form>
+                <label>Nickname</label>
+                <input type="text" name="nickname" form="main-form">
+                
+            </section>
+            <section>
+                <form>
+                    <label>Send file</label>                                                                     <br>
+                    <input type="file" multiple >                                                                <br> 
+                    <label>Pattern</label>                                                                       <br>
+                    <input type="text" pattern="[A-Za-z]{6}">                                                    <br>
+                    <label>Read Only</label>                                                                     <br>
+                    <input type="text" name="Read only" value="Google" readonly >                                <br>
+                    <label>Disabled</label>                                                                      <br>
+                    <input type="text" name="Disabled" value="dis" disabled>                                     <br>
+                    <input type="submit" value="submit">
+                </form>
+            </section>
+            <section>
+                <h4>This Is About &lt;Audio&gt;</h4>
+                 <audio controls autoplay loop muted preload="metadata">
+                    <source src="001.mp3" type="audio/mpeg">
+                    <source src="001.ogg" type="audio/ogg">
+                 </audio>
+            </section>
+            <section>
+               <dl>
+                <!-- description list  !-->
+                    <dt>name</dt>
+                    <dd>mohamed</dd>
+                    <dt>Course</dt>
+                    <dd>Cloud Computing</dd>
+                    <dt>degree</dt>
+                    <dd>100</dd>
+                </dl>
+            </section>
+            
+            
+        </body>
+    </html>
+    
